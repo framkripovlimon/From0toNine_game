@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.text {
+	font-size: 32px;
+	line-height: 38px;
+	margin-top: 22px;
+	text-align: center;
+}
+
+.flex-center {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	flex-direction: column;
+}
+
+.game-window-text {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.big-num {
+	font-weight: 900;
+	font-size: 500px;
+	line-height: 586px;
+	text-align: center;
+}
+
+.big-num.animation {
+	animation-name: bigNumberSize;
+	animation-duration: 5000ms;
+}
+
+.timer {
+	background: #00880E;
+	border-radius: 20px;
+	width: 1200px;
+	height: 40px;
+}
+
+.timer.animation {
+	animation-name: lineBackground;
+	animation-duration: 5000ms;
+}
+
+.score-group {
+	position: absolute;
+	top: 58px;
+	right: 61px;
+}
+
+.score {
+	width: 93px;
+	font-weight: 900;
+	font-size: 80px;
+	line-height: 63px;
+	color: #5A5A5A;
+	text-align: center;
+}
+
+.text-score {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 47px;
+	color: #8D8D8D;
+	text-align: center;
+}
+
+.end-text {
+	color: #D50000;
+	text-align: center;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 47px;
+}
+
+.score-result {
+	font-weight: 900;
+	font-size: 400px;
+	line-height: 1;
+	color: #5A5A5A;
+	text-align: center;
+}
+
+.best-result {
+	text-align: center;
+	color: #5A5A5A;
+	font-weight: 400;
+	font-size: 64px;
+	line-height: 75px;
+}
+
+.last-page-text {
+	margin-top: 62px;
+}
+
+.new-record {
+	color: #00880E;
+}
+
+.hidden {
+	display: none !important;
+}
+
+@keyframes lineBackground {
+  0% {
+		background-color: #00880E;
+		width: 100%;
+	}
+  50% {
+		background-color: #BDAE24;
+	}
+  100% {
+		background-color: #D50000;
+		width: 40px;
+	}
+}
+
+@keyframes bigNumberSize {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.4);
+		opacity: 0;
+	}
+}

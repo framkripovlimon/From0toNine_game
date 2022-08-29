@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>From0toNine</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="screenHello">
+		<div class="flex-center">
+			<div class="text">Правила: успевай жать на нужную цифру на клавиатуре</div>
+			<div class="text"><strong>Нажми пробел чтобы начать</strong></div>
+		</div>
+	</div>
+
+	<div class="hidden" id="screenGame">
+		<div class="game-window-text">
+	  	<div class="big-num" id="bigNum">/</div>
+			<div class="timer" id="timer"></div>
+		</div>
+
+		<div class="score-group">
+			<div class="score" id="score">0</div>
+			<div class="text-score">счёт</div>
+		</div>
+	</div>
+	
+	<div class="hidden" id="screenResult">
+		<div class="flex-center">
+			<div class="end-text">ИГРА ОКОНЧЕНА</div>
+			<div class="score-result" id="scoreResult">/</div>
+			<div class="best-result" id="bestResult">лучший результат: 0</div>
+			<div class="text last-page-text"><strong>Нажми пробел чтобы начать заново</strong></div>
+		</div>
+	</div>
+
+	<script type="module" src="main.js"></script>
+</body>
+</html>
